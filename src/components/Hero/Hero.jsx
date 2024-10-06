@@ -48,7 +48,7 @@ const Hero = () => {
             animate="visible"
             className=" sm:text-[60px] text-[40px] font-extrabold  text-white  "
           >
-            Innovate{" "}
+            Innovate.{" "}
           </motion.h1>
           <br />
           <motion.h1
