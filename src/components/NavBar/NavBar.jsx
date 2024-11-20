@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { IoMdMenu } from "react-icons/io";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { img } from "../../constants";
 
 const NavBar = () => {
@@ -38,7 +38,7 @@ const NavBar = () => {
             >
               <ul className="duration-400 my-8 flex flex-col justify-center items-center  text-center gap-3">
                 <li>
-                  <NavLink
+                  <Link
                     to="/"
                     className={({ isActive }) => {
                       `${isActive ? "font-bold" : "font-normal"}
@@ -46,7 +46,7 @@ const NavBar = () => {
                     }}
                   >
                     Home
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -80,20 +80,11 @@ const NavBar = () => {
           ) : (
             ""
           )}
-
-          {/* <ul className="sm:hidden">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact us</li>
-            <li>Works</li>
-          </ul> */}
-
-          {/* Nav Links */}
           <ul className="hidden sm:flex sm:justify-center sm:items-center sm:space-x-6 sm:text-center">
             <li>
-              <NavLink to="/" className="text-white">
+              <Link to="/" className="text-white">
                 Home
-              </NavLink>
+              </Link>
             </li>
             <li>
               <a
